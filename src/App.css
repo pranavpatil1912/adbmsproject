@@ -1,0 +1,295 @@
+*{
+  padding:0;
+  margin: 0;
+  font-family: 'poppins', sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background: #080808;
+  color: #fff;
+}
+.container{
+  max-width: 1300px;
+  width: auto;
+}
+span{
+  color: #ff004f;
+}
+.navbar{
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+.navbar img{
+  background-color:aquamarine;
+}
+.navbar img:hover{
+  background-color: #ff004f;
+}
+nav{
+  flex: 1;
+  text-align: right;
+}
+ul li{
+  display: inline-block;
+  list-style-type: none;
+  justify-content: space-around;
+  margin-right: 20px;
+}
+ul li a{
+  text-decoration: none;
+}
+a{
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 20px;
+  position: relative;
+}
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after{
+  width: 100%;
+}
+nav ul li a:hover{
+  color: aquamarine;
+}
+.row{
+  justify-content: space-around;
+  flex-wrap: wrap;
+  display: flex; 
+  align-items: center;
+}
+.col-1{
+  flex-basis: 50%;
+  min-width: 300px;
+}
+.col-1 img{
+  max-width: 100%;
+  padding: 50px 0;
+}
+.col-1 h1{
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
+}
+.col p{
+  size: 50px;
+}
+.btn{
+  display: inline-block;
+  background:#ff523b;
+  color: #fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.btn:hover{
+  background-color: #563434;
+}
+.container .row{
+  margin-left: 50px;
+
+}
+.categories{
+  margin:70px 0;
+}
+.col-2{
+  flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+.col-2 img{
+  width: 100%;
+}
+.small-container{
+  max-width: 1080px;
+  margin: auto;
+  padding: 30px 25px;
+  background: radial-gradient(#fff,#e49f9f);
+  color: #080808;
+}
+.col-3{
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: transform 0.5s;
+}   
+.col-3 img{
+  width: 100%;
+}
+.col-3:hover{
+  transform: translateY(-5px);
+}
+h2{
+  text-align: center;
+  margin: 0 auto 80px;
+  line-height: 60px;
+  color: #555;
+  position: relative;
+}
+h2::after{
+  content: '';
+  background: #ff523b;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+h4{
+  color: #555;
+  font-weight: normal;
+}
+.col-3 p{
+  font-size: 14px;
+}
+.rating .fa{
+  color: #ff523b;
+}
+.col-4 h2{
+  margin-bottom: 50px;
+  line-height: 60px;
+  color: #080808;
+}
+.col-4 img{
+  height: 300px;
+}
+.offer{
+  margin-top: 50px;
+  padding: 20px 0;
+  background: radial-gradient(#fff,#ed9c9c);
+}
+small{
+  color: #555;
+}
+.small-container_1{
+  display: flex;
+  flex-basis: 35%;
+  margin-left: 50px;
+  align-items: center;
+}
+.col-5{
+  justify-content: space-around;
+  padding: 0 30px;
+}
+
+/*-----------testimonial----------*/
+
+.testimonial {
+  padding-top: 100px;
+}
+.testimonial .col-5{
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 5px 10px 8px 8px rgb(51, 67, 146);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.col-5 img{
+  width: 50px;
+  margin-top: 20px;
+  border-radius: 30%;
+}
+.col-5:hover{
+transform: translateY(-10px);
+}
+.fa.fa-quote-left{
+  font-size: 34px;
+  color: #ff523b;
+}
+.col-5:p{
+  font-size: 12px;
+  margin: 12px 0;
+  color: #777;
+}
+.col-5 h3{
+  font-size: 16px;
+  color: #555;
+  font-weight: 600;
+}
+
+/*----------Brands----------*/
+.brands{
+  margin: 100px auto;
+}
+.col-6{
+  width: 160px;
+}
+.col-6 img{
+  width: 100%;
+  cursor: pointer;
+}
+
+/*--------for a screen  adjustment---------*/
+.menu-icon{
+  width: 28px;
+  margin-left: 20px;
+  display: none;
+  color: #fff;
+}
+
+
+/*-------Media query for screen---------*/
+@media only screen and (max-widht:800px) {
+
+  nav ul{
+       position: absolute;
+       top: 70px;
+       left: 0;
+       width: 100%;
+       overflow: hidden;
+       transition: max-height 0.5s;
+  }
+  nav ul li{
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-right: 50px;
+  }
+}
+.menu-icon{
+  display: block;
+  cursor: pointer;
+}
+
+/*----------Media query for less than 600 screen size----------*/
+@media only screen and (max-widht: 600px){
+  .row{
+      text-align: center;
+  }
+  .col-2,  .col-3,  .col-4{
+      flex-basis: 100%;
+  }
+}
+
+/*------------Order now--------*/
+button{
+  padding:10px 20px; 
+  display: inline-block;
+  background:#ff933b;
+  color: #fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+button:hover{
+  background-color: #563434;
+}
+html{
+  scroll-behavior: smooth;
+}
